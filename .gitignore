@@ -9,7 +9,13 @@ install_manifest.txt
 compile_commands.json
 CTestTestfile.cmake
 _deps
+
+# Microsoft Visual Studio
 .vs/
 out/
 build/
 bin/
+
+# CLion
+.idea/
+cmake-build-*/

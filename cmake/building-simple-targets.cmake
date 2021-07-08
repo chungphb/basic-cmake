@@ -7,7 +7,7 @@
 #   + SHARED: Specify a shared or dynamically linked library. (.dll on Windows, .dylib on Apple platforms and .so on Unix-like platforms)
 # - Usage: Generate a library and creates a CMake target.
 
-add_library(module ${CMAKE_CURRENT_SOURCE_DIR}/module.cpp)
+add_library(module ${CMAKE_CURRENT_SOURCE_DIR}/src/module.cpp)
 
 # - Command:
 #   target_include_directories(targetName

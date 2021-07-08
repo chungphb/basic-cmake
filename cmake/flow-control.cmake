@@ -70,8 +70,7 @@ if(NOT FALSE)
 endif()
 
 # 1.3. Comparison tests
-# - Command:
-#   if(value1 OPERATOR value2)
+# - Command: if(value1 OPERATOR value2)
 
 set(val1 5)
 set(val2 12)
@@ -142,8 +141,7 @@ if(ver1 VERSION_GREATER_EQUAL ver2)
     message("${ver1} >= ${ver2}")
 endif()
 
-# - Command:
-#   if(value MATCHES regex)
+# - Command: if(value MATCHES regex)
 # - Usage: Test a string against a regular expression.
 # - Notes:
 #   + Support basic regex syntax only.
@@ -156,7 +154,7 @@ if("The ${val}" MATCHES "The (world|ocean|space)")
 endif()
 
 # 1.4. File system tests
-# - Command:
+# - Commands:
 #   if(EXISTS pathToFileOrDir)
 #   if(IS_DIRECTORY pathToDir)
 #   if(IS_SYMLINK fileName)
@@ -191,7 +189,7 @@ else()
 endif()
 
 # 1.5. Existence tests
-# - Command:
+# - Commands:
 #   if(DEFINED name)
 #   if(COMMAND name)
 #   if(POLICY name)
@@ -230,8 +228,7 @@ else()
     message("Test ${tst} is not defined")
 endif()
 
-# - Command:
-#   if(value IN_LIST listVar)
+# - Command: if(value IN_LIST listVar)
 
 set(val 1)
 set(lst 1 2 3)
@@ -266,7 +263,7 @@ message(${LINE})
 #   foreach(loopVar arg1 arg2 ...)
 #     # ...
 #   endforeach()
-# - Usage: For loop.
+# - Usage: Loop.
 
 message("Valid elements:")
 foreach(i 1 2 3)
@@ -277,7 +274,7 @@ endforeach()
 #   foreach(loopVar IN [LISTS listVar1 ...] [ITEMS item1 ...])
 #     # ...
 #   endforeach()
-# - Usage: For loop.
+# - Usage: Loop.
 
 set(lst1 H e l l o)
 set(lst2 w o r l d)
@@ -291,7 +288,7 @@ endforeach()
 #   foreach(loopVar RANGE start stop [step])
 #     # ...
 #   endforeach()
-# - Usage: For loop.
+# - Usage: Loop.
 
 message("Valid elements:")
 foreach(i RANGE 5 12 2)
@@ -302,7 +299,7 @@ endforeach()
 #   foreach(loopVar RANGE value)
 #     # ...
 #   endforeach()
-# - Usage: For loop.
+# - Usage: Loop.
 
 message("Valid elements:")
 foreach(i RANGE 4)
@@ -314,7 +311,7 @@ endforeach()
 #   while(condition)
 #     # ...
 #   endwhile()
-# - Usage: While loop.
+# - Usage: Loop.
 
 message("Valid elements:")
 set(val 0)
@@ -324,8 +321,7 @@ while(val LESS 5)
 endwhile()
 
 # 2.3. Interrupting loops
-# - Command:
-#   break()
+# - Command: break()
 # - Usage: Exit a loop.
 
 message("Valid elements:")
@@ -339,8 +335,7 @@ while(val LESS 12)
     message(${val})
 endwhile()
 
-# - Command:
-#   continue()
+# - Command: continue()
 # - Usage: Skip to the next iteration.
 
 message("Valid elements:")

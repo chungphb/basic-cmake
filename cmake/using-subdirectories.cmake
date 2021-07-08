@@ -10,8 +10,6 @@
 #   + Builds can be composed of subcomponents which are defined independently from the top level project.
 #   + Parts of the build can be turned on or off simply by choosing whether to add in that directory.
 
-set(LINE "========================================")
-
 # 1. add_subdirectory()
 # - Command: add_subdirectory(sourceDir [binaryDir] [EXCLUDE_FROM_ALL])
 # - Usage: Allow a project to bring another directory into the build.

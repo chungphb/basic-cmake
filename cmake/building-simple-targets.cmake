@@ -27,8 +27,8 @@ add_library(module ${CMAKE_CURRENT_SOURCE_DIR}/src/module.cpp)
 target_include_directories(module PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)
 
 # - Command: add_executable(targetName [WIN32] [MACOSX_BUNDLEX] [EXCLUDE_FROM_ALL] source1 [source2...])
-#   + WIN32: Build a Windows GUI application.
-#   + MACOSX_BUNDLE: Build an app bundle on Apple platform.
+#   + WIN32:            Build a Windows GUI application.
+#   + MACOSX_BUNDLE:    Build an app bundle on Apple platform.
 #   + EXCLUDE_FROM_ALL: Exclude the target from the default ALL target.
 # - Usage: Generate an executable file and create a CMake target.
 

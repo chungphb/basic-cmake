@@ -2,8 +2,6 @@
 # VARIABLES #
 #############
 
-set(LINE "========================================")
-
 # 1. Variable basics
 # - Command:
 #   set(varName value... [PARENT_SCOPE])

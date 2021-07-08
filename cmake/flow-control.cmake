@@ -2,8 +2,6 @@
 # FLOW CONTROL #
 ################
 
-set(LINE "========================================")
-
 # 1. if()
 # - Command:
 #   if(expression1)

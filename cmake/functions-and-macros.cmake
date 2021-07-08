@@ -2,8 +2,6 @@
 # FUNCTIONS AND MACROS #
 ########################
 
-set(LINE "========================================")
-
 # 1. The basics
 # - Command:
 #   function(name [arg1 [arg2 [...]]])
@@ -17,7 +15,7 @@ endfunction()
 
 func()
 
-# - Command: macro(name [arg1 [arg2 [...]]])
+# - Command:
 #   macro(name [arg1 [arg2 [...]]])
 #     # Macro body...
 #   endmacro()
@@ -195,6 +193,8 @@ function(func)
 endfunction()
 
 func()
+
+message(${LINE})
 
 ################### RECOMMENDED PRACTICES ###################
 

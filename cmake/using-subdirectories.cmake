@@ -76,8 +76,7 @@ message(${LINE})
 ############################################################
 
 # 2. include()
-# - Command:
-#   include(fileName [OPTIONAL] [RESULT_VARIABLE myVar] [NO_POLICY_SCOPE])
+# - Command: include(fileName [OPTIONAL] [RESULT_VARIABLE myVar] [NO_POLICY_SCOPE])
 # - Usage: Allow a project to bring another directory into the build.
 # - Notes:
 #   + Differences from add_subdirectory():
@@ -104,6 +103,8 @@ include(src/sample2.cmake)
 
 # - Command: include_guard()
 # - Usage: Similar to #pragma once of C/C++.
+
+message(${LINE})
 
 ################### RECOMMENDED PRACTICES ###################
 

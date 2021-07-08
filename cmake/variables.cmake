@@ -16,7 +16,7 @@ set(LINE "========================================")
 #   + Strings are not restricted to be in a single LINE.
 #   + [>=3.0] An alternative to quote is using [=[ ]=] with any number of = characters used at both the start and the end.
 
-set(var "Hello world!")             # var = "Hello world"
+set(var "Hello world!")             # var = "Hello world!"
 set(var 1 2 3)                      # var = "1;2;3"
 
 set(var1 "x")                       # var1 = "x"
@@ -203,7 +203,7 @@ message("subList = ${subList}")
 #   + This command modifies the list directly.
 
 list(APPEND list d e f)
-message("list (1) = ${list}")
+message("list(1) = ${list}")
 
 # - Command: list(INSERT listVar index item [item...])
 # - Usage: Insert items.
@@ -211,7 +211,7 @@ message("list (1) = ${list}")
 #   + This command modifies the list directly.
 
 list(INSERT list 2 g h i)
-message("list (2) = ${list}")
+message("list(2) = ${list}")
 
 # - Command: list(FIND listVar value outVar)
 # - Usage: Find an item.
@@ -271,6 +271,8 @@ set(x 4)
 set(y 7)
 math(EXPR z "(${x} + ${y}) / 2")
 message("(${x} + ${y}) / 2 = ${z}")
+
+message(${LINE})
 
 ################### RECOMMENDED PRACTICES ###################
 

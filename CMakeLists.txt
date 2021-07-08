@@ -7,3 +7,4 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 include(cmake/building-simple-targets.cmake)
 include(cmake/variables.cmake)
+include(cmake/flow-control.cmake)

@@ -87,7 +87,7 @@ message(${LINE})
 #     . CMAKE_CURRENT_LIST_FILE
 #     . CMAKE_CURRENT_LIST_LINE
 
-include(src/sample.cmake)
+include(src/Sample.cmake)
 
 ############################################################
 
@@ -95,9 +95,9 @@ include(src/sample.cmake)
 # - Command: return()
 # - Usage: Stop processing the remainder of the current file and return control back to the caller.
 
-include(src/sample2.cmake)
-include(src/sample2.cmake)
-include(src/sample2.cmake)
+include(src/Sample2.cmake)
+include(src/Sample2.cmake)
+include(src/Sample2.cmake)
 
 # - Command: include_guard()
 # - Usage: Similar to #pragma once of C/C++.

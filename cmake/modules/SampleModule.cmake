@@ -1,0 +1,1 @@
+message("Module ${CMAKE_CURRENT_LIST_FILE}")

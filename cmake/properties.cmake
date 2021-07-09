@@ -167,7 +167,7 @@
 #   )
 #   get_test_properties(resultVar test prop)
 # - Usage: Set and get test properties.
-# - Notes;
+# - Notes:
 #   + The other type of property CMake supports is for installed files.
 
 ################### RECOMMENDED PRACTICES ###################

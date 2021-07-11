@@ -4,7 +4,7 @@
 
 # 1. Variable basics
 # - Command:
-#   set(varName value... [PARENT_SCOPE])
+#   set(varName value ... [PARENT_SCOPE])
 # - Usage: Define a variable.
 # - Notes:
 #   + A variable has a specific scope.
@@ -40,7 +40,7 @@ set(var)
 ############################################################
 
 # 2. Environmental variables
-# - Command: set(ENV{varName} value... [PARENT_SET])
+# - Command: set(ENV{varName} value ... [PARENT_SET])
 # - Usage: Set an environmental variable.
 # - Example: set(ENV{PATH} "$ENV{PATH}:~")
 # - Notes:
@@ -50,7 +50,7 @@ set(var)
 ############################################################
 
 # 3. Cache variables
-# - Command: set(varName value... CACHE type "docstring" [FORCE])
+# - Command: set(varName value ... CACHE type "docstring" [FORCE])
 #   + docstring can be empty
 #   + type must be BOOL, FILEPATH, PATH, STRING or INTERNAL
 # - Usage: Define a cache variable.
@@ -120,7 +120,7 @@ message("inputStr = ${inputStr}")
 message("subStr = ${subStr}")
 message("fIndex = ${fIndex}, lIndex = ${lIndex}")
 
-# - Command: string(REPLACE matchStr replaceWith outVar inputStr [inputStr...])
+# - Command: string(REPLACE matchStr replaceWith outVar inputStr [inputStr ...])
 # - Usage: Replace every occurrence of a string in the input strings and store the result.
 
 set(newSubStr xyz)
@@ -129,9 +129,9 @@ message("outputStr (after replacing ${subStr} by ${newSubStr}) = ${outputStr}.")
 
 # - Command: string(REGEX ...)
 # - Usage:
-#   + Find the first match and store it:    string(REGEX MATCH regex outVar input [input...])
-#   + Find all matches and store them:      string(REGEX MATCHALL regex outVar input [input...])
-#   + Replace all matches and return:	    string(REGEX REPLACE regex replaceWith outVar input [input...])
+#   + Find the first match and store it:    string(REGEX MATCH regex outVar input [input ...])
+#   + Find all matches and store them:      string(REGEX MATCHALL regex outVar input [input ...])
+#   + Replace all matches and return:	    string(REGEX REPLACE regex replaceWith outVar input [input ...])
 
 string(REGEX MATCHALL "[ace]" matchVar ${inputStr})
 message("matchVar = ${matchVar}")
@@ -189,13 +189,13 @@ message("list = ${list}")
 list(LENGTH list len)
 message("length = ${len}")
 
-# - Command: list(GET listVar index [index...] outVar)
+# - Command: list(GET listVar index [index ...] outVar)
 # - Usage: Retrieve one or more items from a list.
 
 list(GET list 0 1 subList)
 message("subList = ${subList}")
 
-# - Command: list(APPEND listVar item [item...])
+# - Command: list(APPEND listVar item [item ...])
 # - Usage: Append items.
 # - Notes:
 #   + This command modifies the list directly.
@@ -203,7 +203,7 @@ message("subList = ${subList}")
 list(APPEND list d e f)
 message("list(1) = ${list}")
 
-# - Command: list(INSERT listVar index item [item...])
+# - Command: list(INSERT listVar index item [item ...])
 # - Usage: Insert items.
 # - Notes:
 #   + This command modifies the list directly.
@@ -217,7 +217,7 @@ message("list(2) = ${list}")
 list(FIND list b index)
 message("index(b) = ${index}")
 
-# - Command: list(REMOVE_ITEM listVar item [item...])
+# - Command: list(REMOVE_ITEM listVar item [item ...])
 # - Usage: Remove one or more items.
 # - Notes:
 #   + This command modifies the list directly.
@@ -225,7 +225,7 @@ message("index(b) = ${index}")
 list(REMOVE_ITEM list a c)
 message("list(3) = ${list}")
 
-# - Command: list(REMOVE_AT listVar index [index...])
+# - Command: list(REMOVE_AT listVar index [index ...])
 # - Usage: Remove one or more indices.
 # - Notes:
 #   + This command modifies the list directly.

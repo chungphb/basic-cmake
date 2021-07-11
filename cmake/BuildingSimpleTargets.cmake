@@ -2,7 +2,7 @@
 # BUILDING SIMPLE TARGETS #
 ###########################
 
-# - Command: add_library(targetName [STATIC | SHARED | MODULE] [EXCLUDE_FROM_ALL] source1 [source2...])
+# - Command: add_library(targetName [STATIC | SHARED | MODULE] [EXCLUDE_FROM_ALL] source1 [source2 ...])
 #   + STATIC: Specify a static library or an archive. (.lib on Windows and .a on Unix-like platforms)
 #   + SHARED: Specify a shared or dynamically linked library. (.dll on Windows, .dylib on Apple platforms and .so on Unix-like platforms)
 # - Usage: Generate a library and creates a CMake target.
@@ -11,8 +11,8 @@ add_library(module ${CMAKE_CURRENT_SOURCE_DIR}/src/module.cpp)
 
 # - Command:
 #   target_include_directories(targetName
-#	  <PUBLIC | PRIVATE | INTERFACE> item1 [item2...]
-#	  <PUBLIC | PRIVATE | INTERFACE> item3 [item4...]
+#	  <PUBLIC | PRIVATE | INTERFACE> item1 [item2 ...]
+#	  <PUBLIC | PRIVATE | INTERFACE> item3 [item4 ...]
 #     ...
 #   )
 #   + PRIVATE:
@@ -26,7 +26,7 @@ add_library(module ${CMAKE_CURRENT_SOURCE_DIR}/src/module.cpp)
 
 target_include_directories(module PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)
 
-# - Command: add_executable(targetName [WIN32] [MACOSX_BUNDLEX] [EXCLUDE_FROM_ALL] source1 [source2...])
+# - Command: add_executable(targetName [WIN32] [MACOSX_BUNDLEX] [EXCLUDE_FROM_ALL] source1 [source2 ...])
 #   + WIN32:            Build a Windows GUI application.
 #   + MACOSX_BUNDLE:    Build an app bundle on Apple platform.
 #   + EXCLUDE_FROM_ALL: Exclude the target from the default ALL target.
@@ -36,8 +36,8 @@ add_executable(main ${CMAKE_CURRENT_SOURCE_DIR}/main.cpp)
 
 # - Command:
 #   target_link_libraries(targetName
-#	  <PUBLIC | PRIVATE | INTERFACE> item1 [item2...]
-#	  [<PUBLIC | PRIVATE | INTERFACE> item3 [item4...]]
+#	  <PUBLIC | PRIVATE | INTERFACE> item1 [item2 ...]
+#	  [<PUBLIC | PRIVATE | INTERFACE> item3 [item4 ...]]
 #     ...
 #   )
 # - Usage: Adds

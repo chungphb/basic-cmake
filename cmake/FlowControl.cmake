@@ -5,11 +5,11 @@
 # 1. if()
 # - Command:
 #   if(expression1)
-#     # commands...
+#     # commands
 #   elseif(expression2)
-#     # commands...
+#     # commands
 #   else()
-#     # commands...
+#     # commands
 #   endif()
 # - Usage: If
 # - Notes:

@@ -32,14 +32,14 @@ find_package(SamplePackage)
 # - Usage: Provide two macros which make printing the values of properties and variables more convenient.
 # - Commands:
 #   cmake_print_properties(
-#     [TARGETS target1 [target2...]]
-#     [SOURCES source1 [source2...]]
-#     [DIRECTORIES dir1 [dir2...]]
-#     [TESTS test1 [test2...]]
-#     [CACHE_ENTRIES var1 [var2...]]
-#     PROPERTIES prop1 [prop2...]
+#     [TARGETS target1 [target2 ...]]
+#     [SOURCES source1 [source2 ...]]
+#     [DIRECTORIES dir1 [dir2 ...]]
+#     [TESTS test1 [test2 ...]]
+#     [CACHE_ENTRIES var1 [var2 ...]]
+#     PROPERTIES prop1 [prop2 ...]
 #   )
-#   cmake_print_variables(var1 [var2...])
+#   cmake_print_variables(var1 [var2 ...])
 
 include(CMakePrintHelpers)
 cmake_print_properties(TARGETS module PROPERTIES TYPE ALIASED_TARGET)

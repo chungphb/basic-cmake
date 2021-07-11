@@ -61,8 +61,8 @@
 #   define_property(
 #     entityType
 #     PROPERTY propName [INHERITED]
-#     BRIEF_DOCS briefDoc [more...]
-#     FULL_DOCS fullDoc [more...]
+#     BRIEF_DOCS briefDoc [more ...]
+#     FULL_DOCS fullDoc [more ...]
 #   )
 # - Usage: Define a property.
 # - Notes:
@@ -113,7 +113,7 @@
 
 # - Commands:
 #   set_target_properties(
-#     target1 [target2...]
+#     target1 [target2 ...]
 #     PROPERTIES
 #     prop1 val1
 #     [prop2 val2 ...]
@@ -134,7 +134,7 @@
 
 # - Commands:
 #   set_source_properties(
-#     file1 [file2...]
+#     file1 [file2 ...]
 #     PROPERTIES
 #     prop1 val1
 #     [prop2 val2 ...]
@@ -160,7 +160,7 @@
 # 7. Other property types
 # - Commands:
 #   set_test_properties(
-#     test1 [test2...]
+#     test1 [test2 ...]
 #     PROPERTIES
 #     prop1 val1
 #     [prop2 val2 ...]

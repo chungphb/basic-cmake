@@ -5,7 +5,7 @@
 # 1. The basics
 # - Command:
 #   function(name [arg1 [arg2 [...]]])
-#     # Function body...
+#     # Function body
 #   endfunction()
 # - Usage: Similar to function in C/C++.
 
@@ -17,7 +17,7 @@ func()
 
 # - Command:
 #   macro(name [arg1 [arg2 [...]]])
-#     # Macro body...
+#     # Macro body
 #   endmacro()
 # - Usage: Similar to #define macro in C/C++.
 

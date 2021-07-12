@@ -21,3 +21,4 @@ include(cmake/Policies.cmake)
 # Builds in depth
 include(cmake/BuildType.cmake)
 include(cmake/CompilerAndLinkerEssentials.cmake)
+include(cmake/LanguageRequirements.cmake)

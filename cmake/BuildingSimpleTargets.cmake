@@ -5,7 +5,7 @@
 # - Command: add_library(targetName [STATIC | SHARED | MODULE] [EXCLUDE_FROM_ALL] source1 [source2 ...])
 #   + STATIC: Specify a static library or an archive. (.lib on Windows and .a on Unix-like platforms)
 #   + SHARED: Specify a shared or dynamically linked library. (.dll on Windows, .dylib on Apple platforms and .so on Unix-like platforms)
-# - Usage: Generate a library and creates a CMake target.
+# - Usage: Generate a library and create a CMake target.
 
 add_library(module ${CMAKE_CURRENT_SOURCE_DIR}/src/module.cpp)
 
